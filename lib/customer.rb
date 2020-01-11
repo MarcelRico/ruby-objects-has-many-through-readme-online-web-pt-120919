@@ -25,6 +25,5 @@ class Customer
   def waiters
     result = []
     meals.map{|meal| meal.waiter}
-    
   end
 end
