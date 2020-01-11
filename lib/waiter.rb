@@ -21,7 +21,7 @@ class Waiter
   end
   
   def best_tipper
-    pp self.meals.max{|a,b| a.tip <=> b.tip}
+    highest_tipper = self.meals.max{|a,b| a.tip <=> b.tip}.customer
   end
   
 end
