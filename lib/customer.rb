@@ -23,6 +23,8 @@ class Customer
   end
   
   def waiters
-    meals.each{|meal| meal.waiter}
+    result = []
+    meals.each{|meal| result << meal.waiter}
+    result
   end
 end
