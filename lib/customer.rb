@@ -23,6 +23,6 @@ class Customer
   end
   
   def waiters
-    meals.{}
+    meals.each{|meal| meal.waiter}
   end
 end
